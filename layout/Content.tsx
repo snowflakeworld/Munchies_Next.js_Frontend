@@ -1,13 +1,15 @@
 'use client'
 
+import { useMemo, useState } from 'react'
+
 import { Box } from '@mui/material'
+
+import Header from './Header'
+import Main from './Main'
 
 import SidebarFilters from '@/components/SidebarFilters'
 import { FilterContext } from '@/context/FilterContext'
 import { FilterList, PriceRangeList, RestaurantList } from '@/types'
-import { useMemo, useState } from 'react'
-import Header from './Header'
-import Main from './Main'
 
 interface ContentProps {
   restaurants: RestaurantList

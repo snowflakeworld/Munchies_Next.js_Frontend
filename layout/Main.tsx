@@ -1,7 +1,8 @@
+import { Stack, Typography } from '@mui/material'
+
 import FilterSlide from '@/components/FilterSlide'
 import RestaurantCardList from '@/components/RestaurantCardList'
 import { RestaurantList } from '@/types'
-import { Stack, Typography } from '@mui/material'
 
 interface Props {
   restaurants: RestaurantList

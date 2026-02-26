@@ -1,5 +1,6 @@
-import { FilterList, PriceRangeList } from '@/types'
 import { createContext } from 'react'
+
+import { FilterList, PriceRangeList } from '@/types'
 
 export const FilterContext = createContext<{
   categories: FilterList
