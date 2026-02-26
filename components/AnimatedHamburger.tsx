@@ -1,7 +1,8 @@
 'use client'
 
-import { useMediaQuery, useTheme } from '@mui/material'
 import { useState } from 'react'
+
+import { useMediaQuery, useTheme } from '@mui/material'
 
 interface Props {
   onToggle?: (open: boolean) => void

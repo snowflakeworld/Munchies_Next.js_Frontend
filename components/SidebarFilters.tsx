@@ -1,9 +1,11 @@
 'use client'
 
+import { useContext } from 'react'
+
+import { Button, Card, Stack, Typography, useMediaQuery, useTheme } from '@mui/material'
+
 import { FILTER_PRICE, FILTER_TIME } from '@/constants'
 import { FilterContext } from '@/context/FilterContext'
-import { Button, Card, Stack, Typography, useMediaQuery, useTheme } from '@mui/material'
-import { useContext } from 'react'
 
 export default function SidebarFilters() {
   const theme = useTheme()

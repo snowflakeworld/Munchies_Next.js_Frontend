@@ -1,11 +1,12 @@
 'use client'
 
+import { useEffect, useState } from 'react'
+
 import { ArrowForward, Circle } from '@mui/icons-material'
 import { Button, Card, Chip, Typography } from '@mui/material'
 
 import { API_SERVER_URL, EXTERNAL_SERVER_URL, FILTER_TIME } from '@/constants'
 import { OpenStatus, Restaurant } from '@/types'
-import { useEffect, useState } from 'react'
 import { StyledImage } from './StyledImage'
 
 interface Props {
