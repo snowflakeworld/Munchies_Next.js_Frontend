@@ -7,7 +7,7 @@ import { Grid } from '@mui/material'
 import { FILTER_TIME } from '@/constants'
 import { FilterContext } from '@/context/FilterContext'
 import { Restaurant, RestaurantList } from '@/types'
-import RestaurantCard from './RestaurantCard'
+import RestaurantCardItem from './RestaurantCardItem'
 
 interface Props {
   restaurants: RestaurantList
@@ -40,7 +40,7 @@ export default function RestaurantCardList({ restaurants }: Props) {
 
       return true
     },
-    [categoryId, timeId, priceId]
+    [categoryId, timeId, priceId, filterContext.prices.ranges]
   )
 
   return (
@@ -49,7 +49,7 @@ export default function RestaurantCardList({ restaurants }: Props) {
         .filter(restaurant => filter(restaurant))
         .map(restaurant => (
           <Grid key={restaurant.id} size={{ xs: 12, sm: 6, md: 4 }}>
-            <RestaurantCard restaurant={restaurant} />
+            <RestaurantCardItem restaurant={restaurant} />
           </Grid>
         ))}
     </Grid>

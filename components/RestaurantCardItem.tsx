@@ -13,7 +13,7 @@ interface Props {
   restaurant: Restaurant
 }
 
-export default function RestaurantCard({ restaurant }: Props) {
+export default function RestaurantCardItem({ restaurant }: Props) {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   const title = FILTER_TIME.filter(

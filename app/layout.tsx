@@ -1,12 +1,11 @@
 'use client'
 
-import { Metadata } from 'next'
+import { Suspense } from 'react'
 
 import CssBaseline from '@mui/material/CssBaseline'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 
 import { LoadingScreen } from '@/components/LoadingScreen'
-import { Suspense } from 'react'
 import '../styles/globals.css'
 
 const theme = createTheme({
