@@ -26,7 +26,7 @@ export default async function Page() {
 
   return (
     <div className='min-h-screen'>
-      <Container className='py-16 min-h-screen' sx={{ maxWidth: '1440px !important' }}>
+      <Container className='py-16 min-h-screen restrict-max-width'>
         <Content restaurants={restaurants} filters={filters} prices={prices} />
       </Container>
     </div>

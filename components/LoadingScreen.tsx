@@ -6,7 +6,7 @@ export const LoadingScreen = () => {
       className='flex justify-center items-center h-dvh fixed w-full'
       sx={{
         backdropFilter: 'rgba(255, 255, 255, 0.5)',
-        zIndex: 1000
+        zIndex: 500
       }}
     >
       <CircularProgress />

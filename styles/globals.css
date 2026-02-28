@@ -22,4 +22,8 @@ body,
   scrollbar-width: none; /* Firefox */
 }
 
+.restrict-max-width {
+  max-width: 1440px !important;
+}
+
 /* Add any global overrides here */

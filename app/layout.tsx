@@ -6,6 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 
 import { LoadingScreen } from '@/components/LoadingScreen'
+
 import '../styles/globals.css'
 
 const theme = createTheme({
